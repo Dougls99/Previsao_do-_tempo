@@ -1,0 +1,20 @@
+ .header{
+  font-size: 2em;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 1em;
+  color:aliceblue;
+  background-image: linear-gradient(rgb(241, 104, 12), rgb(253, 194, 32));
+}
+
+.input{
+  margin: 4em;
+  width: 35em;
+  padding: 1em;
+}
+
+input::-webkit-input-placeholder {
+  font-size: 20px;
+  text-align:start
+}
