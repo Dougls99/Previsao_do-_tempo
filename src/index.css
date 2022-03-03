@@ -6,3 +6,13 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+body{
+  background: rgb(255,154,0);
+  background: -moz-linear-gradient(0deg, rgba(255,154,0,1) 50%, rgba(255,121,63,1) 100%);
+  background: -webkit-linear-gradient(0deg, rgba(255,154,0,1) 50%, rgba(255,121,63,1) 100%);
+  background: linear-gradient(0deg, rgba(255,154,0,1) 50%, rgba(255,121,63,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff9a00",endColorstr="#ff793f",GradientType=1);
+  background-size: cover;
+  height: 100vh;
+}

@@ -1,9 +1,11 @@
-import Header from "./components/layout/Header";
+import Home from "./components/layout/Home.js";
+
 
 function App() {
-  return (
-    <Header />
-  );
+  return <>
+    <Home />
+    </>
+  ;
 }
 
 export default App;
