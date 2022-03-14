@@ -21,3 +21,24 @@ h2 {
   padding-top: 0.5em;
   padding-right: 5em;
 }
+
+.input{
+  margin: 4em;
+  width: 35em;
+  padding: 1em;
+}
+
+input::-webkit-input-placeholder {
+  font-size: 20px;
+  text-align:start
+}
+
+.search {
+  padding: 5px;
+  display: flex;
+  position: absolute;
+  height: 1.1em;
+  width: 1.1em;
+  top: 5.5em;
+  right: 14em;
+}
