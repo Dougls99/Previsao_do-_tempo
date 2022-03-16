@@ -4,15 +4,27 @@ import search from "../img/search.svg";
 
 function Home() {
 
-  const [city, setCity] = useState("")
+  const [city, setCity] = useState("Rio de Janeiro")
+  const [weatherForecast, setWeatherForecast] = useState()
 
   const handleChange = (e) => {
     setCity(e.target.value)
   }
 
   const handleSearch = () => {
-    fetch()
-  }
+    fetch(
+      `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=f7ff113294face37b28ba685fe5a2b40
+      `
+    )
+    .then((response) => {
+      if(response.status == 200){
+        return response.json()
+      }
+    })
+    .then((data) => {
+      console.log('data =>', data)
+    });
+  };
 
   return (
 
@@ -31,10 +43,25 @@ function Home() {
      className={styles.search} 
      src={search} 
      alt="search"
+     onClick={handleSearch}
     />
     </div>
     <hr></hr>
     <h2>Capitais</h2>
+    
+    <p>Min Máx</p>
+    <ul>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
   </header>
   );
 }
