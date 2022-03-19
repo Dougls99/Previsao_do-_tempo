@@ -4,8 +4,7 @@ import search from "../img/search.svg";
 
 function Home() {
 
-  const [city, setCity] = useState("Rio de Janeiro")
-  const [weatherForecast, setWeatherForecast] = useState()
+  const [city, setCity] = useState("")
 
   const handleChange = (e) => {
     setCity(e.target.value)
@@ -29,39 +28,25 @@ function Home() {
   return (
 
   <header className={styles.header}>
-    <h1>Previsão do tempo</h1>
+    <h1>Previsão do tempo</h1>  
     <div className="Previsao">
     </div>
     <div>
-    <input
-     className={styles.input}
-     placeholder="Insira aqui o nome da cidade"
-     onChange={handleChange}
-     value={city}
-    /> 
-    <img
-     className={styles.search} 
-     src={search} 
-     alt="search"
-     onClick={handleSearch}
-    />
+      <input
+       className={styles.input}
+       placeholder="Insira aqui o nome da cidade"
+       onChange={handleChange}
+       value={city}
+      /> 
+      <img
+       className={styles.search} 
+       src={search} 
+       alt="search"
+       onClick={handleSearch}
+      />
     </div>
-    <hr></hr>
-    <h2>Capitais</h2>
-    
-    <p>Min Máx</p>
-    <ul>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-    </ul>
+     <hr></hr>
+     <h2>Capitais</h2>
   </header>
   );
 }
