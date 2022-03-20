@@ -1,11 +1,11 @@
-import Home from "./components/layout/Home.js";
-
+import Home from './components/layout/Home.js'
 
 function App() {
-  return <>
-    <Home />
+  return (
+    <>
+      <Home />
     </>
-  ;
+  )
 }
 
-export default App;
+export default App
