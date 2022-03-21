@@ -3,7 +3,7 @@ import styles from './Home.module.css'
 import search from '../img/search.svg'
 
 function Home() {
-  const [climas, setClimas] = useState('')
+  const [climas, setClimas] = useState("")
 
   const [city, setCity] = useState('')
 
@@ -13,7 +13,7 @@ function Home() {
 
   const handleSearch = async () => {
     const response = await fetch(
-      `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=f7ff113294face37b28ba685fe5a2b40
+      `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=f7ff113294face37b28ba685fe5a2b40&units=metric&lang=pt_br
       `
     )
 
@@ -22,12 +22,9 @@ function Home() {
 
   return (
     <header className={styles.header}>
-      {climas ? (
-        <h1>Previsão do tempo {climas.main}</h1>
-      ) : (
+
         <h1>Previsão do tempo </h1>
-      )}
-      <div className="Previsao"></div>
+    
       <div>
         <input
           className={styles.input}
@@ -42,8 +39,23 @@ function Home() {
           onClick={handleSearch}
         />
       </div>
+
+      {climas ? (
+        <div className="previsao">
+          <h3>{climas.name} {climas.sys.country}</h3>
+          <p>{climas.main.temp}ºC {climas.weather[0].description}</p> 
+          <p>min {climas.main.temp_min}º  máx {climas.main.temp_max}º</p>
+          <p>Sensação {climas.main.feels_like}</p>
+          <p>Humidade {climas.main.humidity}%</p>
+          <p>Vento: {climas.wind.speed}km/h</p>
+
+        </div>
+      ) : (
+        <div></div>
+      )}
       <hr></hr>
       <h2>Capitais</h2>
+      
     </header>
   )
 }

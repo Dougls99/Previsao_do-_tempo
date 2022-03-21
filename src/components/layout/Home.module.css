@@ -1,18 +1,17 @@
- .header{
+.header {
   padding: 1.5em;
   font-size: 2em;
   display: flex;
   align-items: center;
   flex-direction: column;
-  color:aliceblue;
+  color: aliceblue;
 }
 
-
 hr {
-  height:2px;
+  height: 2px;
   width: 23em;
-  border:none;
-  background-color:rgb(248, 244, 244);
+  border: none;
+  background-color: rgb(248, 244, 244);
   margin-top: 0px;
   margin-bottom: 0px;
 }
@@ -22,7 +21,7 @@ h2 {
   padding-right: 5em;
 }
 
-.input{
+.input {
   margin: 4em;
   width: 35em;
   padding: 1em;
@@ -30,7 +29,7 @@ h2 {
 
 input::-webkit-input-placeholder {
   font-size: 20px;
-  text-align:start
+  text-align: start;
 }
 
 .search {
@@ -41,4 +40,11 @@ input::-webkit-input-placeholder {
   width: 1.1em;
   top: 5.5em;
   right: 14em;
+}
+
+.previsao img {
+  width: 25em;
+  height: 20em;
+  padding-bottom: 3em;
+  list-style-type: none;
 }
