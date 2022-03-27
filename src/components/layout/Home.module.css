@@ -1,6 +1,6 @@
-.header {
-  padding: 1.5em;
-  font-size: 2em;
+.header h1 {
+  padding-top: 1em;
+  font-size: 4em;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -12,8 +12,7 @@ hr {
   width: 23em;
   border: none;
   background-color: rgb(248, 244, 244);
-  margin-top: 0px;
-  margin-bottom: 0px;
+  display: flex;
 }
 
 h2 {
@@ -23,8 +22,23 @@ h2 {
 
 .input {
   margin: 4em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  color: aliceblue;
+}
+
+.input input {
+  height: 3em;
   width: 35em;
-  padding: 1em;
+}
+
+.input img {
+  width: 2.3em;
+  display: flex;
+  position: absolute;
+  right: 30em;
 }
 
 input::-webkit-input-placeholder {
@@ -42,9 +56,13 @@ input::-webkit-input-placeholder {
   right: 14em;
 }
 
-.previsao img {
-  width: 25em;
-  height: 20em;
-  padding-bottom: 3em;
-  list-style-type: none;
+.previsao{
+  background-color: aliceblue;
+  display: flex;
+  padding-bottom: 2em;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1em;
+  width: 50em;
 }

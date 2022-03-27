@@ -25,15 +25,13 @@ function Home() {
 
         <h1>Previsão do tempo </h1>
     
-      <div>
+      <div className={styles.input}>
         <input
-          className={styles.input}
           placeholder="Insira aqui o nome da cidade"
           onChange={handleChange}
           value={city}
         />
-        <img
-          className={styles.search}
+        <img 
           src={search}
           alt="search"
           onClick={handleSearch}
@@ -41,7 +39,7 @@ function Home() {
       </div>
 
       {climas ? (
-        <div className="previsao">
+        <div className={styles.previsao}>
           <h3>{climas.name} {climas.sys.country}</h3>
           <p>{climas.main.temp}ºC {climas.weather[0].description}</p> 
           <p>min {climas.main.temp_min}º  máx {climas.main.temp_max}º</p>
