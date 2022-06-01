@@ -2,6 +2,7 @@ import { useState } from 'react'
 import styles from './Home.module.css'
 import search from '../img/search.svg'
 
+
 function Home() {
   const [climas, setClimas] = useState('')
 
@@ -29,8 +30,9 @@ function Home() {
           placeholder="Insira aqui o nome da cidade"
           onChange={handleChange}
           value={city}
+          id="submit"
         />
-        <img src={search} alt="search" onClick={handleSearch} />
+        <img src={search} alt="search" id="search" onClick={handleSearch} />
       </div>
 
       {climas ? (
@@ -38,26 +40,20 @@ function Home() {
           <h3>
             {climas.name} {climas.sys.country}
           </h3>
-          <p>
+          <h2>
             {climas.main.temp}ºC {climas.weather[0].description}
-          </p>
-          <p>
-            min {climas.main.temp_min}º máx {climas.main.temp_max}º
-          </p>
-          <p>Sensação {climas.main.feels_like}</p>
-          <p>Humidade {climas.main.humidity}%</p>
-          <p>Vento: {climas.wind.speed}km/h</p>
+          </h2>
+          <h3>
+            min {climas.main.temp_min}º | máx {climas.main.temp_max}º
+          </h3>
+          <h3>Sensação {climas.main.feels_like}</h3>
+          <h3>Humidade {climas.main.humidity}%</h3>
+          <h3>Vento: {climas.wind.speed}km/h</h3>
         </div>
       ) : (
         <div></div>
       )}
       <hr></hr>
-      <h2>Capitais</h2>
-      <div>
-        <ul>
-          <li></li>
-        </ul>
-      </div>
     </header>
   )
 }

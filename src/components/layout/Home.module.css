@@ -37,7 +37,7 @@ h2 {
   width: 2.3em;
   display: flex;
   position: absolute;
-  right: 30em;
+  right: 45em;
 }
 
 input::-webkit-input-placeholder {
@@ -52,23 +52,28 @@ input::-webkit-input-placeholder {
   height: 1.1em;
   width: 1.1em;
   top: 5.5em;
-  right: 14em;
+  right: 20em;
 }
 
-.previsao{
+.previsao {
   background-color: aliceblue;
   display: flex;
   align-items: center;
   flex-direction: column;
   flex-wrap: wrap;
   width: 50em;
-  height: 10em;
+  height: 20em;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 2em;
 }
 
-.previsao img {
-  width: 50px;
-  height: 50px;
+.capitais {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 10em;
+  height: 30em;
+  margin-left: auto;
+  margin-right: auto;
 }

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Faculdade</title>
+</head>
+<body>
+  <header>
+    <h1>Login</h1>
+  </header>
+  <div>
+    <p>Usuário</p>
+    <input type="text" id="usuario" />
+  </div>
+  <div>
+    <p>Senha</p>
+    <input type="password" id="senha" />
+  </div>
+  <button type="button" onclick="enviar()">Enviar</button>
+
+  <script>
+    function enviar() {
+        var usuario = (document.getElementById("usuario").value);
+        var senha = (document.getElementById("senha").value);
+
+    if(usuario == '' && senha == '' ){
+            alert("Usuario e senha Obrigatótio");
+        } if((usuario !== 'ABCD' && senha !== '123456' )){
+            alert("Login falhou")
+        }else{
+        alert("Sucesso")
+        }};
+</script>
+</body>
+</html>
