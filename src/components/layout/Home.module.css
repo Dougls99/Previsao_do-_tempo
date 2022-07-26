@@ -2,6 +2,7 @@
   font-size: 4em;
   display: flex;
   align-items: center;
+  text-align: center;
   flex-direction: column;
   color: aliceblue;
 }
@@ -36,7 +37,6 @@ h2 {
 .input img {
   width: 2.3em;
   display: flex;
-  position: absolute;
   right: 45em;
 }
 
@@ -60,6 +60,7 @@ input::-webkit-input-placeholder {
   display: flex;
   align-items: center;
   flex-direction: column;
+  justify-content: center;
   flex-wrap: wrap;
   width: 50em;
   height: 20em;
