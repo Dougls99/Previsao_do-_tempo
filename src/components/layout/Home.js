@@ -20,12 +20,6 @@ function Home() {
     setClimas(await response.json())
   }
 
-  const Enter = e => {
-    if(e.charCode === 13){
-     return handleChange();
-   }
-  }
-
   return (
     <header className={styles.header}>
       <h1>Previsão do tempo </h1>
@@ -37,7 +31,6 @@ function Home() {
           value={city}
           id="submit"
           type="text"
-          onKeyDown={Enter}
         />
         <img src={search} alt="search" id="search" onClick={handleSearch} />
       </div>
@@ -60,7 +53,6 @@ function Home() {
       ) : (
         <div></div>
       )}
-      <hr></hr>
     </header>
   )
 }

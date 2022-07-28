@@ -63,12 +63,12 @@ input::-webkit-input-placeholder {
   justify-content: space-around;
   flex-wrap: wrap;
   width: 50em;
-  height: 20em;
+  height: 35em;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 2em;
 
-  max-width: 25em;
+  max-width: 15em;
 }
 
 .capitais {
